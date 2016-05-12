@@ -22,13 +22,14 @@
 </head>
 <body>
 
-    <!--example#1-->
     <input type="text" ng-model="name">
 
     <!--binding using ng-model directive-->
     <h3>Hello, {{name}}</h3>
+
     <!--binding using ng-bind directive-->
     <h3 ng-bind="name"></h3>
+
 </body>
 </html>
 ```
