@@ -24,11 +24,14 @@
 
     <input type="text" ng-model="name">
 
-    <!--binding using ng-model directive-->
+    <!--binding data using ng-model directive-->
     <h3>Hello, {{name}}</h3>
 
-    <!--binding using ng-bind directive-->
+    <!--binding data to an element using ng-bind directive-->
     <h3 ng-bind="name"></h3>
+
+    <!--note that we can not use {{expression}} when using ng-bing-->
+    <label>My name is: </label><label ng-bind="name"></label>
 
 </body>
 </html>
