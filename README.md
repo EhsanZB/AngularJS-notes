@@ -12,9 +12,16 @@ Other useful references:
 
 ### Topics:
 
-01. Basics - An introduction to AngularJS
+01. Basics
 02. MVC
 03. Controllers
+04. Directives (basic built-in directives with examples)
+05. Services (basics)
+05. Filters
+06. Custom filters
+07. Custom directives and configuration of its properties
+08. Dependency injection
+09. Services (advanced) - Factory
 
 
 _more topics will be added soon!_
