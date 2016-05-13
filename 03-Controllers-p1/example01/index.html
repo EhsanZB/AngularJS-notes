@@ -1,0 +1,21 @@
+<!DOCTYPE html>
+<html lang="en" ng-app="myApp">
+<head>
+    <meta charset="UTF-8">
+    <title>MVC basic</title>
+    <script src="lib/angular.min.js"></script>
+    <!-- referencing the controller file -->
+    <script src="js/controllers.js"></script>
+</head>
+<body>
+
+    <div ng-controller= "MyController1"> 
+        <h3>Hello  {{author.name + ', ' + author.lastName}}</h3>
+    </div>
+
+    <div ng-controller= "MyController2"> 
+        <h3>Hello  {{author.name + ', ' + author.lastName}}</h3>
+    </div>
+    
+</body>
+</html>
