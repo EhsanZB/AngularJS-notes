@@ -15,7 +15,7 @@
 
 * gives us ability to add functionality to our data and link models to the view.
 * contains javascript classes. such classes contain `business logic` behind the application to decorate the scope with functions and values.
-* controlls Angular application.
+* controls Angular application.
 * it's a middle ware between view and model to bind data.
 * has bidirectional relation with model and one-way relation with view.
 * naming the controller with `PascalCase`.
