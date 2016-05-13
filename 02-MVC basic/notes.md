@@ -3,26 +3,29 @@
 > Model
 
 * it's a kind of data storage and represents our `data` (json/xml/database/...).
+* Models in AngularJS are the properties of a scope; scopes are attached to the DOM where scope properties are accessed through bindings.
 
 > View
 
 * presentation assets. (display data)
-* html files (templates).
+* html files (`templates`).
 
 > Controller
 
 * gives us ability to add functionality to our data and link models to the view.
-* javascript classes.
+* contains javascript classes. such classes contain `business logic` behind the application to decorate the scope with functions and values.
 * controlls Angular application.
 * it's a middle ware between view and model to bind data.
 * has bidirectional relation with model and one-way relation with view.
 * naming the controller with `PascalCase`.
+* ng-Controller directive specifies a Controller class;
 
 ---
 
 > ng-controller
 
 * use to reference controllers that created in javascript.
+* attaches a controller class to the view.
 * manage the parts of the page using javascript classes.
 
 _note that the exmaple below works on version 1.2.x (from 1.3 and above, we need to declare module otherwise, the controller in our view will be declared as undefined!)_
