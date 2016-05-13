@@ -1,5 +1,8 @@
 ## AngularJS basics
 
+* angular directives help us to `define the view` for our application. angular `extends HTML` with directives.
+* ng-directiveName (equal to data-ng-directiveName). we can also make custom directive.
+
 > ng-app
 
 * defineds an AngularJs `application`. It tells Angular that which element should be managed.
