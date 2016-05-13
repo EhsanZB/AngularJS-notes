@@ -1,4 +1,4 @@
-# AngularJS-notes
+# AngularJS up and running
 This repo represents useful examples to up and running AngularJS.
 
 > This tutorial has been compiled from variety of sources throughout the Web, articles, books and videos.
