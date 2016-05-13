@@ -16,12 +16,14 @@ Other useful references:
 02. MVC
 03. Controllers
 04. Directives (basic built-in directives with examples)
-05. Services (basics)
-05. Filters
-06. Custom filters
-07. Custom directives and configuration of its properties
-08. Dependency injection
-09. Services (advanced) - Factory
+05. Custom directives
+06. Services (basics)
+07. Filters
+08. Custom filters
+09. Configuration of custom directive's properties
+10. Dependency injection
+11. Scope
+12. Services (advanced) - Factory
 
 
 _more topics will be added soon!_
