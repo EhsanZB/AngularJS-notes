@@ -4,6 +4,7 @@
 
 * it's a kind of data storage and represents our `data` (json/xml/database/...).
 * Models in AngularJS are the properties of a scope; scopes are attached to the DOM where scope properties are accessed through bindings.
+* scope is just a glue between the controller and the view.
 
 > View
 
@@ -19,6 +20,8 @@
 * has bidirectional relation with model and one-way relation with view.
 * naming the controller with `PascalCase`.
 * ng-Controller directive specifies a Controller class;
+* controller can `add properties` to the scope and the `view can access` those.
+* controller can `set functions` to the scope. such functions perfom logic and interact with services. such `services encapsulate business layer` of the application.
 
 ---
 
