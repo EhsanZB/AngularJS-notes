@@ -25,7 +25,9 @@
 * use to reference controllers that created in javascript.
 * manage the parts of the page using javascript classes.
 
-_note that the exmaple below works on version 1.2.x (from 1.3 and above, we need to declare module)_
+_note that the exmaple below works on version 1.2.x (from 1.3 and above, we need to declare module otherwise, the controller in our view will be declared as undefined!)_
+
+* more details at [AngularJs Breaking Changes](https://github.com/angular/angular.js/blob/master/CHANGELOG.md#breaking-changes-1)
 
 ```html
 <!DOCTYPE html>
