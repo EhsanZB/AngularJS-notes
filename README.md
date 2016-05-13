@@ -6,6 +6,8 @@ This repo represents useful examples to up and running AngularJS.
 
 Other useful references:
 
+* [Official AngularJS API doc](https://docs.angularjs.org/api/)
+* [Official AngularJS developer guide](https://docs.angularjs.org/guide/)
 * [Learning AngularJS](http://shop.oreilly.com/product/0636920035831.do)
 * [Introducing AngularJS - VIDEO](https://www.packtpub.com/web-development/introducing-angularjs-video)
 
