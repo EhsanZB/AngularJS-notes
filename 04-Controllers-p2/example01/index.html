@@ -1,0 +1,45 @@
+<!DOCTYPE html>
+<html lang="en" ng-app="myApp">
+<head>
+    <meta charset="UTF-8">
+    <title>MVC basic</title>
+    <script src="lib/angular.min.js"></script>
+    <!-- referencing the controller file -->
+    <script src="js/controllers.js"></script>
+</head>
+<body>
+
+    <div ng-controller= "MyController"> 
+        <ul>
+        	<!-- displaying all items (note that $index is zero-based)-->
+            <li ng-repeat="item in shoppingList">{{$index+1}} - {{item.name}}</li>
+        </ul>
+        EVEN
+        <ul>
+            <!-- finding even items, if yes, it returns true-->
+            <li ng-repeat="(key, value) in shoppingList">{{key}}:{{value.name}} - {{$even}}</li>
+        </ul>
+        ODD
+        <ul>
+            <!-- finding odd items, if yes, it returns true-->
+            <li ng-repeat="(key, value) in shoppingList">{{key}}:{{value.name}} - {{$odd}}</li>
+        </ul>
+        MIDDLE
+        <ul>
+            <!-- finding middle items, it doesn't mean exactly at midlle, it means just not located at begining or end!-->
+            <li ng-repeat="(key, value) in shoppingList">{{key}}:{{value.name}} - {{$middle}}</li>
+        </ul>
+        FIRST
+        <ul>
+            <!-- finding the first item-->
+            <li ng-repeat="(key, value) in shoppingList">{{key}}:{{value.name}} - {{$first}}</li>
+        </ul>
+        LAST
+        <ul>
+            <!-- finding the last item-->
+            <li ng-repeat="(key, value) in shoppingList">{{key}}:{{value.name}} - {{$last}}</li>
+        </ul>
+    </div>
+    
+</body>
+</html>
