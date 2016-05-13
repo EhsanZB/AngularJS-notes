@@ -28,6 +28,8 @@
 _note that the exmaple below works on version 1.2.x (from 1.3 and above, we need to declare module otherwise, the controller in our view will be declared as undefined!)_
 
 * more details at [AngularJs Breaking Changes](https://github.com/angular/angular.js/blob/master/CHANGELOG.md#breaking-changes-1)
+* also note that in this example, we have place everything in a global variable called $scope (not a good practice! could conflict with other variables)
+* in such case, we need to specify Namespaces to differentiate between variables with same name (see next topic).
 
 ```html
 <!DOCTYPE html>
