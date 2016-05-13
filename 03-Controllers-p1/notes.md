@@ -65,4 +65,37 @@ var myAppModule = angular.module('myApp',[]).controller('MyController', function
 });
 ```
 
+Example:
+
+```html
+<!DOCTYPE html>
+<html lang="en" data-ng-app="myApp">
+<head>
+    <meta charset="UTF-8">
+    <title></title>
+    <script src="angular.min.js"></script>
+</head>
+<body ng-controller="GreetingController">
+
+<p>{{greeting}} User! The current date/time is: {{now | date:'medium'}}</p>
+<input type="button" ng-click="randomGreeting()" value="Random Greeting"/>
+
+
+<script>
+angular.module('myApp',[]).controller('GreetingController', function($scope){
+    $scope.now = new Date();
+    $scope.helloMessage = ['Hello', 'Hola', 'Ciao', 'Salam'];
+    $scope.greeting = $scope.helloMessage[0];
+    $scope.randomGreeting = function(){
+        $scope.greeting = $scope.helloMessage[parseInt((Math.random() * $scope.helloMessage.length))]
+    }
+});
+
+</script>
+
+</body>
+</html>
+```
+
+
 
