@@ -54,6 +54,7 @@ _note that the exmaple below works on version 1.2.x (from 1.3 and above, we need
     // define our Controller
     function MyController($scope) {
         // define our Model (data) by manually creating an object
+        // also called as 'model object'
         $scope.author = {
         'name' : 'John',
         'lastName' : 'Doe'
