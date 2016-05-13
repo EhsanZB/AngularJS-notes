@@ -6,6 +6,8 @@
 * so, in order to protect our variables we should apply Namespacing (e.g: myApp).
 * We can think of a module as a container for the different parts of our app.
 * angular.module(name, [requires], [configFn]);
+* angular.module is a global API for creating or retrieving models and registering components.
+* note that only the first time of calling angular.module( ), we should specify the dependency [ ], if we call it multiple times then we can omit the second parameter (pass it with single parameter) to retrive the module that already created.
 
 ```js
 var myAppModule = angular.module('myApp',[]);
