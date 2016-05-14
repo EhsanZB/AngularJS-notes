@@ -227,6 +227,68 @@ ng-class="$variableToEvaluate ? 'className-if-true' : 'className-if-false'"
 
 
 
+```html
+<!DOCTYPE html>
+<html lang="en" ng-app="myApp">
+<head>
+    <meta charset="UTF-8">
+    <title>Directives - sample</title>
+    <link rel="stylesheet" type="text/css" href="style.css">
+    <script src="angular.min.js"></script>
+</head>
+<body>
+
+<div ng-controller="CourseController">
+
+    <select ng-model="selectedCourse" ng-options="course.CourseName for course in Courses">
+        <option value="">please select a course</option>
+    </select>
+
+    <br>
+
+    <div>
+        <li><label>Course ID: </label>{{selectedCourse.CourseID}}</li>
+        <li><label>Department: </label>{{selectedCourse.Department}}</li>
+    </div>
+
+</div>
+
+<script>
+    angular.module('myApp',[]).controller('CourseController',function($scope){
+        $scope.Courses = [
+            { CourseName: "Read MVC 6.0", CourseID: 2,Department:"IT" },
+            { CourseName: "Design DB", CourseID: 4, Department: "Findiv" },
+            { CourseName: "Design MFT Site", CourseID: 6, Department: "IT" },
+            { CourseName: "Complete Inventory system", CourseID: 7, Department: "IT" },
+            { CourseName: "Test SQL Procedure", CourseID: 9, Department: "Service" },
+            { CourseName: "Oracle.", CourseID: 11, Department: "IT" },
+            { CourseName: "Read CSS", CourseID: 13, Department: "Service" }
+        ];
+    })
+</script>
+</body>
+</html>
+```
+* making an alias for our defined 'selectedCourse model':
+
+```html
+<div ng-controller="CourseController">
+
+    <select ng-model="selectedCourse" ng-options="course.Department as course.CourseName for course in Courses">
+        <option value="">please select a course</option>
+    </select>
+
+    <br>
+
+    <div>
+        <li><label ng-style="{color:'green',fontSize:'14px'}">Department: </label>{{selectedCourse}}</li>
+    </div>
+
+</div>
+```
+
+* `group by` example:
+
 
 
 
