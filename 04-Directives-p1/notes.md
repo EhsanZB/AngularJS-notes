@@ -201,10 +201,10 @@ ng-class="$variableToEvaluate ? 'className-if-true' : 'className-if-false'"
 > ng-options
 
 * use to create options for a select element by getting the options from the scope model.
-* use to dynamically generate a list of <option> elements for the <select> element using the array or object.
+* use to dynamically generate a list of option elements for the select element using the array or object.
 * By default, ngModel watches the model by reference, not value. So this is important to know when binding the select to a model that is an object or a collection.
 
-> _Using select as will bind the result of the select expression to the model, but the value of the <select> and <option> html elements will be either the index (for array data sources) or property name (for object data sources) of the value within the collection. If a track by expression is used, the result of that expression will be set as the value of the option and select elements._
+> _Using select as will bind the result of the select expression to the model, but the value of the "select" and "option" html elements will be either the index (for array data sources) or property name (for object data sources) of the value within the collection. If a track by expression is used, the result of that expression will be set as the value of the option and select elements._
 
 * ngOptions for __array data__ sources:
 
