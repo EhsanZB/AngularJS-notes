@@ -289,6 +289,22 @@ ng-class="$variableToEvaluate ? 'className-if-true' : 'className-if-false'"
 
 * `group by` example:
 
+```html
+<div ng-controller="CourseController">
+
+    <select ng-model="selectedCourse" ng-options="course.CourseName group by course.Department for course in Courses">
+        <option value="">please select a course</option>
+    </select>
+
+    <br>
+
+    <div>
+        <li><label ng-style="{color:'blue',fontSize:'14px'}">Course ID: </label>{{selectedCourse.CourseID}}</li>
+        <li><label ng-style="{color:'green',fontSize:'14px'}">Department: </label>{{selectedCourse.Department}}</li>
+    </div>
+
+</div>
+```
 
 
 
